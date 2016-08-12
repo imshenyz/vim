@@ -11,8 +11,8 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 " colorscheme plugins
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'tomasr/molokai'
-Plugin 'chriskempson/vim-tomorrow-theme'
+" Plugin 'tomasr/molokai'
+" Plugin 'chriskempson/vim-tomorrow-theme'
 " other plugins
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
@@ -29,6 +29,8 @@ Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'moll/vim-node'
 Plugin 'ternjs/tern_for_vim'
 Plugin 'Shougo/unite.vim'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'tpope/vim-fugitive'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -51,9 +53,13 @@ set number
 " enable syntax
 syntax enable
 " use dark background
+let g:solarized_termcolors=16
+set t_Co=16
 set background=dark
-" colorscheme Tomorrow-Night-Eighties
+colorscheme solarized
 
+" updatetime
+set updatetime=250
 " search
 set showmatch
 set smartcase
@@ -71,6 +77,7 @@ set nospell
 
 " vim-airline configuration
 let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
 " NERDTreeTabs configuration 
 let g:nerdtree_tabs_open_on_console_startup = 1
 " NERDTree git plugin configuration
