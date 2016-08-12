@@ -62,6 +62,9 @@ set t_Co=16
 set background=dark
 colorscheme solarized
 
+" set nowrap
+set nowrap
+
 " tab and indent setting
 set tabstop=4
 set softtabstop=4
@@ -84,7 +87,7 @@ set incsearch
 
 " copy/paste
 " "set paste
-set clipboard=unnamedplus
+set clipboard=unnamed " plus
 
 " spell check, to be activated manually
 set spelllang=en_us
