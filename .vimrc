@@ -31,6 +31,10 @@ Plugin 'ternjs/tern_for_vim'
 Plugin 'Shougo/unite.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'
+Plugin 'wincent/terminus'
+Plugin 'andreshazard/vim-freemarker'
+" Plugin 'nathanaelkane/vim-indent-guides'
+" Plugin 'Yggdroot/indentLine'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -57,6 +61,17 @@ let g:solarized_termcolors=16
 set t_Co=16
 set background=dark
 colorscheme solarized
+
+" tab and indent setting
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set expandtab
+set autoindent
+
+" open cursor line and column
+set cursorline
+set cursorcolumn
 
 " updatetime
 set updatetime=250
